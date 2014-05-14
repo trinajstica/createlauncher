@@ -40,9 +40,6 @@ type
     procedure commandbtnClick(Sender: TObject);
     procedure iconimgClick(Sender: TObject);
     procedure workingdirbtnClick(Sender: TObject);
-    procedure iconbtnClick(Sender: TObject);
-    procedure cancelbtnClick(Sender: TObject);
-    procedure createbtnClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -125,19 +122,6 @@ end;
 procedure TMainForm.workingdirbtnClick(Sender: TObject);
 begin
   if SelectDirectoryDialog1.Execute then workingdirtxt.text:=SelectDirectoryDialog1.FileName;
-end;
-
-procedure TMainForm.iconbtnClick(Sender: TObject);
-begin
-end;
-
-procedure TMainForm.cancelbtnClick(Sender: TObject);
-begin
-
-end;
-
-procedure TMainForm.createbtnClick(Sender: TObject);
-begin
 end;
 
 end.
