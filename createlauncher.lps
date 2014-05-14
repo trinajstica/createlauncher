@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="createlauncher.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="createlauncher"/>
+        <UsageCount Value="23"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="mainunit"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="98"/>
+        <CursorPos X="7" Y="109"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../enote/baunit.pas"/>
+        <UnitName Value="baunit"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="19"/>
+        <CursorPos X="1" Y="2"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="9" HistoryIndex="8">
+      <Position1>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="108" Column="22" TopLine="86"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="107" Column="22" TopLine="85"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="114" Column="22" TopLine="92"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="67" Column="9" TopLine="65"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="98" Column="6" TopLine="69"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="97" Column="6" TopLine="68"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="104" Column="6" TopLine="73"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="62" Column="1" TopLine="62"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mainunit.pas"/>
+        <Caret Line="108" Column="3" TopLine="83"/>
+      </Position9>
+    </JumpHistory>
+  </ProjectSession>
+  <EditorMacros Count="0"/>
+</CONFIG>

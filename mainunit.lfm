@@ -1,0 +1,198 @@
+object MainForm: TMainForm
+  Left = 426
+  Height = 464
+  Top = 245
+  Width = 370
+  ActiveControl = nametxt
+  BorderStyle = bsDialog
+  Caption = 'Create Launcher 2014.05.14'
+  ClientHeight = 464
+  ClientWidth = 370
+  Position = poScreenCenter
+  LCLVersion = '1.2.2.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 21
+    Top = 8
+    Width = 53
+    Caption = '* Name:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 21
+    Top = 72
+    Width = 66
+    Caption = 'Comment:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 21
+    Top = 136
+    Width = 80
+    Caption = '* Command:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 21
+    Top = 208
+    Width = 121
+    Caption = 'Working directory:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 21
+    Top = 272
+    Width = 33
+    Caption = 'Icon:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 168
+    Height = 21
+    Top = 280
+    Width = 56
+    Caption = 'Options:'
+    ParentColor = False
+  end
+  object nametxt: TEdit
+    Left = 16
+    Height = 33
+    Top = 32
+    Width = 342
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+  end
+  object commenttxt: TEdit
+    Left = 16
+    Height = 33
+    Top = 96
+    Width = 342
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 1
+  end
+  object commandtxt: TEdit
+    Left = 16
+    Height = 33
+    Top = 160
+    Width = 278
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 2
+  end
+  object workingdirtxt: TEdit
+    Left = 16
+    Height = 33
+    Top = 232
+    Width = 278
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 3
+  end
+  object commandbtn: TButton
+    Cursor = crHandPoint
+    Left = 302
+    Height = 33
+    Top = 160
+    Width = 56
+    Anchors = [akTop, akRight]
+    Caption = '...'
+    OnClick = commandbtnClick
+    TabOrder = 4
+  end
+  object workingdirbtn: TButton
+    Cursor = crHandPoint
+    Left = 302
+    Height = 33
+    Top = 232
+    Width = 56
+    Anchors = [akTop, akRight]
+    Caption = '...'
+    OnClick = workingdirbtnClick
+    TabOrder = 5
+  end
+  object terminal: TCheckBox
+    Left = 192
+    Height = 25
+    Top = 320
+    Width = 122
+    Caption = 'Run in terminal'
+    TabOrder = 6
+  end
+  object Panel1: TPanel
+    Left = 59
+    Height = 93
+    Top = 280
+    Width = 91
+    ClientHeight = 93
+    ClientWidth = 91
+    TabOrder = 7
+    object iconimg: TImage
+      Cursor = crHandPoint
+      Left = 1
+      Height = 91
+      Top = 1
+      Width = 89
+      Align = alClient
+      Center = True
+      OnClick = iconimgClick
+    end
+  end
+  object BitBtn1: TBitBtn
+    Cursor = crHandPoint
+    Left = 111
+    Height = 33
+    Top = 392
+    Width = 123
+    Anchors = [akTop, akRight]
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn1Click
+    TabOrder = 8
+  end
+  object BitBtn2: TBitBtn
+    Cursor = crHandPoint
+    Left = 235
+    Height = 33
+    Top = 392
+    Width = 123
+    Anchors = [akTop, akRight]
+    Caption = 'Create'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn2Click
+    TabOrder = 9
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 441
+    Width = 370
+    Panels = <>
+    SimpleText = '   Copyleft by aServis d.o.o. and BArko, 2014'
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    left = 280
+    top = 216
+  end
+  object OpenDialog1: TOpenDialog
+    left = 280
+    top = 136
+  end
+  object OpenDialog2: TOpenDialog
+    Filter = 'png|*.png'
+    InitialDir = '/usr/share/icons'
+    left = 32
+    top = 240
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.desktop'
+    Filter = 'desktop|*.desktop'
+    left = 88
+    top = 248
+  end
+end
