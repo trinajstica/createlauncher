@@ -58,7 +58,14 @@ implementation
 
 procedure TMainForm.commandbtnClick(Sender: TObject);
 begin
-  if OpenDialog1.Execute then commandtxt.text:=OpenDialog1.FileName;
+  if OpenDialog1.Execute then
+  begin
+    nametxt.text:=ExtractFileName(OpenDialog1.FileName);
+    if pos(' ',OpenDialog1.FileName)>0 then
+         commandtxt.text:='"'+OpenDialog1.FileName+'"'
+       else
+         commandtxt.text:=OpenDialog1.FileName;
+  end;
 end;
 
 procedure TMainForm.BitBtn1Click(Sender: TObject);
@@ -112,7 +119,10 @@ begin
   begin
     try
       iconimg.Picture.LoadFromFile(OpenDialog2.FileName);
-      imagefilename:=OpenDialog2.FileName;
+      if pos(' ',OpenDialog2.FileName)>0 then
+         imagefilename:='"'+OpenDialog2.FileName+'"'
+      else
+         imagefilename:=OpenDialog2.FileName;
     except
       iconimg.Picture.Clear;
     end;
@@ -121,7 +131,14 @@ end;
 
 procedure TMainForm.workingdirbtnClick(Sender: TObject);
 begin
-  if SelectDirectoryDialog1.Execute then workingdirtxt.text:=SelectDirectoryDialog1.FileName;
+  if SelectDirectoryDialog1.Execute then
+  begin
+    if pos(' ',SelectDirectoryDialog1.FileName)>0 then
+      workingdirtxt.text:='"'+SelectDirectoryDialog1.FileName+'"'
+    else
+      workingdirtxt.text:=SelectDirectoryDialog1.FileName;
+  end;
+
 end;
 
 end.

@@ -1,139 +1,154 @@
 object MainForm: TMainForm
-  Left = 426
-  Height = 464
-  Top = 245
-  Width = 370
+  Left = 460
+  Height = 580
+  Top = 209
+  Width = 462
   ActiveControl = nametxt
   BorderStyle = bsDialog
-  Caption = 'Create Launcher 2014.05.14'
-  ClientHeight = 464
-  ClientWidth = 370
+  Caption = 'Create Launcher 2019.05.22'
+  ClientHeight = 580
+  ClientWidth = 462
+  DesignTimePPI = 120
   Position = poScreenCenter
-  LCLVersion = '1.2.2.0'
+  LCLVersion = '2.0.2.0'
   object Label1: TLabel
-    Left = 16
-    Height = 21
-    Top = 8
-    Width = 53
+    Left = 20
+    Height = 20
+    Top = 10
+    Width = 62
     Caption = '* Name:'
     ParentColor = False
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 16
-    Height = 21
-    Top = 72
-    Width = 66
+    Left = 20
+    Height = 20
+    Top = 90
+    Width = 79
     Caption = 'Comment:'
     ParentColor = False
+    ParentFont = False
   end
   object Label3: TLabel
-    Left = 16
-    Height = 21
-    Top = 136
-    Width = 80
+    Left = 20
+    Height = 20
+    Top = 170
+    Width = 96
     Caption = '* Command:'
     ParentColor = False
+    ParentFont = False
   end
   object Label4: TLabel
-    Left = 16
-    Height = 21
-    Top = 208
-    Width = 121
+    Left = 20
+    Height = 20
+    Top = 260
+    Width = 140
     Caption = 'Working directory:'
     ParentColor = False
+    ParentFont = False
   end
   object Label5: TLabel
-    Left = 16
-    Height = 21
-    Top = 272
-    Width = 33
+    Left = 20
+    Height = 20
+    Top = 340
+    Width = 38
     Caption = 'Icon:'
     ParentColor = False
+    ParentFont = False
   end
   object Label6: TLabel
-    Left = 168
-    Height = 21
-    Top = 280
-    Width = 56
+    Left = 210
+    Height = 20
+    Top = 350
+    Width = 64
     Caption = 'Options:'
     ParentColor = False
+    ParentFont = False
   end
   object nametxt: TEdit
-    Left = 16
-    Height = 33
-    Top = 32
-    Width = 342
+    Left = 20
+    Height = 32
+    Top = 40
+    Width = 427
     Anchors = [akTop, akLeft, akRight]
+    ParentFont = False
     TabOrder = 0
   end
   object commenttxt: TEdit
-    Left = 16
-    Height = 33
-    Top = 96
-    Width = 342
+    Left = 20
+    Height = 32
+    Top = 120
+    Width = 427
     Anchors = [akTop, akLeft, akRight]
+    ParentFont = False
     TabOrder = 1
   end
   object commandtxt: TEdit
-    Left = 16
-    Height = 33
-    Top = 160
-    Width = 278
+    Left = 20
+    Height = 32
+    Top = 200
+    Width = 347
     Anchors = [akTop, akLeft, akRight]
+    ParentFont = False
     TabOrder = 2
   end
   object workingdirtxt: TEdit
-    Left = 16
-    Height = 33
-    Top = 232
-    Width = 278
+    Left = 20
+    Height = 32
+    Top = 290
+    Width = 347
     Anchors = [akTop, akLeft, akRight]
+    ParentFont = False
     TabOrder = 3
   end
   object commandbtn: TButton
     Cursor = crHandPoint
-    Left = 302
-    Height = 33
-    Top = 160
-    Width = 56
+    Left = 377
+    Height = 32
+    Top = 200
+    Width = 70
     Anchors = [akTop, akRight]
     Caption = '...'
     OnClick = commandbtnClick
+    ParentFont = False
     TabOrder = 4
   end
   object workingdirbtn: TButton
     Cursor = crHandPoint
-    Left = 302
-    Height = 33
-    Top = 232
-    Width = 56
+    Left = 377
+    Height = 32
+    Top = 290
+    Width = 70
     Anchors = [akTop, akRight]
     Caption = '...'
     OnClick = workingdirbtnClick
+    ParentFont = False
     TabOrder = 5
   end
   object terminal: TCheckBox
-    Left = 192
-    Height = 25
-    Top = 320
-    Width = 122
+    Left = 240
+    Height = 24
+    Top = 400
+    Width = 142
     Caption = 'Run in terminal'
+    ParentFont = False
     TabOrder = 6
   end
   object Panel1: TPanel
-    Left = 59
-    Height = 93
-    Top = 280
-    Width = 91
-    ClientHeight = 93
-    ClientWidth = 91
+    Left = 74
+    Height = 116
+    Top = 350
+    Width = 114
+    ClientHeight = 116
+    ClientWidth = 114
+    ParentFont = False
     TabOrder = 7
     object iconimg: TImage
       Cursor = crHandPoint
       Left = 1
-      Height = 91
+      Height = 114
       Top = 1
-      Width = 89
+      Width = 112
       Align = alClient
       Center = True
       OnClick = iconimgClick
@@ -141,58 +156,61 @@ object MainForm: TMainForm
   end
   object BitBtn1: TBitBtn
     Cursor = crHandPoint
-    Left = 111
-    Height = 33
-    Top = 392
-    Width = 123
+    Left = 138
+    Height = 41
+    Top = 490
+    Width = 154
     Anchors = [akTop, akRight]
     Cancel = True
     DefaultCaption = True
     Kind = bkCancel
     ModalResult = 2
     OnClick = BitBtn1Click
+    ParentFont = False
     TabOrder = 8
   end
   object BitBtn2: TBitBtn
     Cursor = crHandPoint
-    Left = 235
-    Height = 33
-    Top = 392
-    Width = 123
+    Left = 293
+    Height = 41
+    Top = 490
+    Width = 154
     Anchors = [akTop, akRight]
     Caption = 'Create'
     Default = True
     Kind = bkOK
     ModalResult = 1
     OnClick = BitBtn2Click
+    ParentFont = False
     TabOrder = 9
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 23
-    Top = 441
-    Width = 370
+    Height = 22
+    Top = 558
+    Width = 462
     Panels = <>
-    SimpleText = '   Copyleft by aServis d.o.o. and BArko, 2014'
+    ParentFont = False
+    SimpleText = 'BArko, 2019'
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
-    left = 280
-    top = 216
+    left = 400
+    top = 248
   end
   object OpenDialog1: TOpenDialog
-    left = 280
-    top = 136
+    left = 392
+    top = 160
   end
   object OpenDialog2: TOpenDialog
     Filter = 'png|*.png'
     InitialDir = '/usr/share/icons'
-    left = 32
-    top = 240
+    left = 40
+    top = 300
   end
   object SaveDialog1: TSaveDialog
     DefaultExt = '.desktop'
     Filter = 'desktop|*.desktop'
-    left = 88
-    top = 248
+    left = 110
+    top = 310
   end
 end
